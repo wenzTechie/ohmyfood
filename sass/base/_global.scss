@@ -1,0 +1,37 @@
+@use "sass:meta";
+@import "../utils/variables";
+
+body {
+    font-family: #{meta.inspect($textFont)};
+    padding: 0;
+    margin: 0px;
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    a { text-decoration: none; }
+    ul li {
+        list-style: none;
+    }
+}
+h1 {
+    font-family: #{meta.inspect($logoFont)};
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h3 {
+        // margin-top: 0;
+        font-weight: 900;
+        color: black;
+        font-size: 1.5em;
+    }
+}
+

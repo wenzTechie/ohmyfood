@@ -1,25 +1,47 @@
 @use "sass:meta";
 @import "./utils/variables";
+@import "./base/global.scss";
 
-body {
-    font-family: #{meta.inspect($textFont)};
-    padding: 0;
-    margin: 0px;
-    color: #252525;
+
+/* Header */
+
+header {
     display: flex;
-    flex-direction: column;
-    a { text-decoration: none; }
-    ul li {
-        list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h1 { margin: 10px 0; }
+}
+
+/* Location */
+
+#location {
+    background-color: $bgMdGray;
+    width: 100%;
+    text-align: center;
+    box-shadow: $ltInset;
+    i { margin-right: 10px; }
+}
+
+/* Intro */
+#intro {
+    background-color: $bgLtGray;
+    h3 { 
+        text-align: center; 
+        margin: 5px 0 0 0;
+    }
+    p {
+        padding: 16px 16px;
+        font-size: 17px;
+        text-align: center;
+        color: #4d4d4d;
+    }
+    a {
+        margin: 20px 0 10px 0;
+        padding: 16px 24px;
+        border-radius: 28px;
+        box-shadow: $stOutset;
+        background-image: linear-gradient($secondary, $primary);
+        color: rgba(255, 255, 255, .8);
     }
 }
-h1 {
-    font-family: #{meta.inspect($logoFont)};
-}
-a {
-    text-decoration: none;
-}
-
-
-
-

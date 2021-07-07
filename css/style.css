@@ -1,3 +1,11 @@
+/* colors */
+/* fonts */
+/* padding */
+/* dropshadows */
+/* colors */
+/* fonts */
+/* padding */
+/* dropshadows */
 body {
   font-family: "Roboto";
   padding: 0;
@@ -15,10 +23,69 @@ body ul li {
 
 h1 {
   font-family: "Shrikhand";
+  color: black;
 }
 
 a {
   text-decoration: none;
+}
+
+section {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section h3 {
+  font-weight: 900;
+  color: black;
+  font-size: 1.5em;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: 10px 0;
+}
+
+/* Location */
+#location {
+  background-color: #eaeaea;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.06) inset;
+}
+#location i {
+  margin-right: 10px;
+}
+
+/* Intro */
+#intro {
+  background-color: #f6f6f6;
+}
+#intro h3 {
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+#intro p {
+  padding: 16px 16px;
+  font-size: 17px;
+  text-align: center;
+  color: #4d4d4d;
+}
+#intro a {
+  margin: 20px 0 10px 0;
+  padding: 16px 24px;
+  border-radius: 28px;
+  box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */
