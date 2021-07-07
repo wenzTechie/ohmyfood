@@ -13,10 +13,35 @@ header {
     h1 { margin: 10px 0; }
 }
 
+/* Location */
+
 #location {
-    background-color: $bgGray;
+    background-color: $bgMdGray;
     width: 100%;
     text-align: center;
     box-shadow: $ltInset;
+    i { margin-right: 10px; }
 }
 
+/* Intro */
+#intro {
+    background-color: $bgLtGray;
+    h3 { 
+        text-align: center; 
+        margin: 5px 0 0 0;
+    }
+    p {
+        padding: 16px 16px;
+        font-size: 17px;
+        text-align: center;
+        color: #4d4d4d;
+    }
+    a {
+        margin: 20px 0 10px 0;
+        padding: 16px 24px;
+        border-radius: 28px;
+        box-shadow: $stOutset;
+        background-image: linear-gradient($secondary, $primary);
+        color: rgba(255, 255, 255, .8);
+    }
+}
