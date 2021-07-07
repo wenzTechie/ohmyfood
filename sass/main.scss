@@ -1,1 +1,14 @@
-@import "./utils/variables"
+@use "sass:meta";
+@import "./utils/variables";
+
+body {
+    font-family: #{meta.inspect($textFont)};
+}
+
+h1 {
+    font-family: #{meta.inspect($logoFont)};
+}
+
+
+
+
