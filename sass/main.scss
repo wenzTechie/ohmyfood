@@ -3,10 +3,21 @@
 
 body {
     font-family: #{meta.inspect($textFont)};
+    padding: 0;
+    margin: 0px;
+    color: #252525;
+    display: flex;
+    flex-direction: column;
+    a { text-decoration: none; }
+    ul li {
+        list-style: none;
+    }
 }
-
 h1 {
     font-family: #{meta.inspect($logoFont)};
+}
+a {
+    text-decoration: none;
 }
 
 
