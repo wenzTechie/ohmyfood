@@ -1,25 +1,22 @@
 @use "sass:meta";
 @import "./utils/variables";
+@import "./base/global.scss";
 
-body {
-    font-family: #{meta.inspect($textFont)};
-    padding: 0;
-    margin: 0px;
-    color: #252525;
+
+/* Header */
+
+header {
     display: flex;
-    flex-direction: column;
-    a { text-decoration: none; }
-    ul li {
-        list-style: none;
-    }
-}
-h1 {
-    font-family: #{meta.inspect($logoFont)};
-}
-a {
-    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h1 { margin: 10px 0; }
 }
 
-
-
+#location {
+    background-color: $bgGray;
+    width: 100%;
+    text-align: center;
+    box-shadow: $ltInset;
+}
 

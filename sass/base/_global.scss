@@ -1,0 +1,22 @@
+@use "sass:meta";
+@import "../utils/variables";
+
+body {
+    font-family: #{meta.inspect($textFont)};
+    padding: 0;
+    margin: 0px;
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    a { text-decoration: none; }
+    ul li {
+        list-style: none;
+    }
+}
+h1 {
+    font-family: #{meta.inspect($logoFont)};
+    color: black;
+}
+a {
+    text-decoration: none;
+}

@@ -1,3 +1,11 @@
+/* colors */
+/* fonts */
+/* padding */
+/* dropshadows */
+/* colors */
+/* fonts */
+/* padding */
+/* dropshadows */
 body {
   font-family: "Roboto";
   padding: 0;
@@ -15,10 +23,29 @@ body ul li {
 
 h1 {
   font-family: "Shrikhand";
+  color: black;
 }
 
 a {
   text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: 10px 0;
+}
+
+#location {
+  background-color: #e9e9e9;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.06) inset;
 }
 
 /*# sourceMappingURL=style.css.map */
