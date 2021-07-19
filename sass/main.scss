@@ -3,9 +3,9 @@
 @import "./base/global.scss";
 
 
-/* Header */
+// Header 
 
-header {
+.c-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,9 +13,9 @@ header {
     h1 { margin: 10px 0; }
 }
 
-/* Location */
+// Location
 
-#location {
+.c-location {
     background-color: $bgMdGray;
     width: 100%;
     text-align: center;
@@ -23,20 +23,20 @@ header {
     i { margin-right: 10px; }
 }
 
-/* Intro */
-#intro {
+// Intro
+.c-intro {
     background-color: $bgLtGray;
-    h3 { 
+    &__title { 
         text-align: center; 
         margin: 5px 0 0 0;
     }
-    p {
+    &__text {
         padding: 16px 16px;
         font-size: 17px;
         text-align: center;
         color: #4d4d4d;
     }
-    a {
+    &__link {
         margin: 20px 0 10px 0;
         padding: 16px 24px;
         border-radius: 28px;
@@ -46,7 +46,9 @@ header {
     }
 }
 
-#steps {
+
+// Instructions
+.l-steps {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -55,7 +57,7 @@ header {
     gap: 30px;
 }
 
-.step {
+.c-step {
     width: 100%;
     box-shadow: $stOutset;
     border-radius: 20px;
@@ -64,5 +66,69 @@ header {
     flex-wrap: nowrap;
     justify-content: start;
     gap: 30px;
-    
+    padding: 11px 0;
+    &__number {
+        background-color: $primary;
+        color: white;
+        padding: 3px 7px;
+        margin: 14px 0 16px -10px;
+        border-radius: 46%;
+    }
+    &__icon {
+        font-weight: 900;
+        font-size: 23px;
+        margin-top: 14px;
+    }
+    &__instruction {
+        font-weight: 900;
+    }
+
+}
+
+// Restaurant Listings
+.l-listings {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.c-listing {
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: $stOutset;
+    margin-top: 20px;
+
+
+
+    &__image {
+        position: relative;
+        img { 
+            width: 100%;
+            height: auto;
+        }
+    }
+    &--new {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 20px;
+        p {
+            padding: 10px 20px;
+            background-color: $tertiary;
+            color: green;
+        }
+    }
+    &__heart-outline {
+        position: absolute;
+    }
+    &__heart-solid {
+        position: absolute;
+    }
+
 }
