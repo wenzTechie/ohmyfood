@@ -98,15 +98,13 @@
 
 .c-listing {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     box-shadow: $stOutset;
     margin-top: 20px;
-
-
-
+    font-size: 18px;
     &__image {
         position: relative;
         img { 
@@ -126,16 +124,23 @@
             font-weight: 900;
         }
     }
-
     &__info {
         position: relative;
+        padding: 0;
         i {
             top: 0;
             right:0;
             margin: 20px;
+            font-size: 20px;
         }
     }
-
+    &__name {
+        font-weight: 900;
+        margin: 5px 20px 5px 20px;
+    }
+    &__location {
+        margin: 5px 20px  10px 20px;
+    }
     &__heart-outline {
         position: absolute;
     }

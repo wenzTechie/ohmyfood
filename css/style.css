@@ -139,12 +139,13 @@ section h3 {
 
 .c-listing {
   width: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
   margin-top: 20px;
+  font-size: 18px;
 }
 .c-listing__image {
   position: relative;
@@ -167,11 +168,20 @@ section h3 {
 }
 .c-listing__info {
   position: relative;
+  padding: 0;
 }
 .c-listing__info i {
   top: 0;
   right: 0;
   margin: 20px;
+  font-size: 20px;
+}
+.c-listing__name {
+  font-weight: 900;
+  margin: 5px 20px 5px 20px;
+}
+.c-listing__location {
+  margin: 5px 20px 10px 20px;
 }
 .c-listing__heart-outline {
   position: absolute;
