@@ -116,12 +116,13 @@ section h3 {
   color: white;
   padding: 3px 7px;
   margin: 14px 0 16px -10px;
-  border-radius: 46%;
+  border-radius: 60%;
 }
 .c-step__icon {
   font-weight: 900;
   font-size: 23px;
   margin-top: 14px;
+  color: #787878;
 }
 .c-step__instruction {
   font-weight: 900;
@@ -159,9 +160,18 @@ section h3 {
   padding: 0 20px;
 }
 .c-listing--new p {
-  padding: 10px 20px;
+  padding: 8px 30px;
   background-color: #99E2D0;
-  color: green;
+  color: #035a45;
+  font-weight: 900;
+}
+.c-listing__info {
+  position: relative;
+}
+.c-listing__info i {
+  top: 0;
+  right: 0;
+  margin: 20px;
 }
 .c-listing__heart-outline {
   position: absolute;
