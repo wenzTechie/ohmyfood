@@ -190,4 +190,26 @@ section h3 {
   position: absolute;
 }
 
+.c-footer {
+  background-color: #363636;
+  color: white;
+  padding: 20px;
+}
+.c-footer h3, .c-footer li, .c-footer a {
+  color: white;
+}
+.c-footer h3 {
+  font-family: "Shrikhand";
+  font-weight: 500;
+}
+.c-footer ul {
+  padding-left: 0px;
+}
+.c-footer li {
+  margin-bottom: 10px;
+}
+.c-footer i {
+  margin-right: 7px;
+}
+
 /*# sourceMappingURL=style.css.map */
