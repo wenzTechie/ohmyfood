@@ -49,6 +49,53 @@ section h3 {
   width: 100%;
 }
 
+/* colors */
+/* fonts */
+/* padding */
+/* dropshadows */
+/*
+These are Menu specific page styles
+*/
+.c-header__back-arrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 18px;
+}
+
+.c-main-image {
+  position: relative;
+}
+.c-main-image img {
+  width: 100%;
+  height: auto;
+}
+
+.l-menu-outer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px 20px 40px 20px;
+  border-radius: 40px 40px 0 0;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin-top: -40px;
+  z-index: 200;
+}
+
+.c-restaurant-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.c-restaurant-header__name {
+  margin-top: 0;
+}
+.c-restaurant-header__favorite {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
 .c-header {
   display: flex;
   flex-direction: row;
