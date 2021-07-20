@@ -2,23 +2,31 @@
 @import "../utils/variables";
 
 body {
-    font-family: #{meta.inspect($textFont)};
     padding: 0;
-    margin: 0px;
-    color: $textColor;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+}
+
+.l-page-wrapper {
+    padding: 0;
+    margin: 0;
     a { text-decoration: none; }
     ul li {
         list-style: none;
     }
+    display: flex;
+    flex-direction: column;
 }
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    color: $textColor;
+    font-family: #{meta.inspect($textFont)};
+    color: $textColor;
+}
+
+
 h1 {
     font-family: #{meta.inspect($logoFont)};
     color: black;
-}
-a {
-    text-decoration: none;
 }
 
 section {
@@ -32,6 +40,7 @@ section {
         font-weight: 900;
         color: black;
         font-size: 1.5em;
+        width: 100%;
     }
-}
+}  
 

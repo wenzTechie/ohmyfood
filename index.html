@@ -15,89 +15,95 @@
 </head>
 
 <body>
-    <header>
-        <h1>ohmyfood</h1>
-    </header>    
-    <div id="location">
-        <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+    <div class="l-page-wrapper">
+        <header class="c-header">
+            <h1>ohmyfood</h1>
+        </header>    
+        <div class="c-location">
+            <p class="c-location__text"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+        </div>
+        <section class="c-intro">
+            <h3 class="c-intro__title">Book the menu you like</h3>
+            <p class="c-intro__text">Discover top-of-the-art restaurants we picked for you</p>
+            <a href="#restaurants" class="c-intro__link">Explore our restaurants</a>
+        </section>
+        <section class="l-instructions">
+            <h3>How it works</h3>
+            <div class="l-steps">
+                <div class="c-step">
+                    <p class="c-step__number">1</p>
+                    <i class="c-step__icon fas fa-mobile-alt"></i>
+                    <p class="c-step__instruction">Choose a restaurant</p>
+                </div>
+                <div class="c-step">
+                    <p class="c-step__number">2</p>
+                    <i class="c-step__icon fas fa-list"></i>
+                    <p class="c-step__instruction">Create your menu</p>
+                </div>
+                <div class="c-step">
+                    <p class="c-step__number">3</p>
+                    <i class="c-step__icon fas fa-store"></i>
+                    <p class="c-step__instruction">Go enjoy it at the restaurant</p>
+                </div>
+            </div>
+        </section>
+        <section class="l-restaurants">
+            <h3>Restaurants</h3>
+            <div id="l-listings">
+                <div class="c-listing">
+                    <div class="c-listing__image"><img src="./public/img/fullPallette.png">
+                        <div class="c-listing--new"><p>New</p></div>
+                    </div>
+                    
+                    <div class="c-listing__info">
+                        <p class="c-listing__name">The Full Palette</p>
+                        <p class="c-listing__location">New York</p>
+                        <i class="c-listing__heart-outline far fa-heart"></i>
+                        <i class="c-listing__heart-solid fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="c-listing">
+                    <div class="c-listing__image"><img src="./public/img/enchanted.png">
+                        <div class="c-listing--new"><p>New</p></div>
+                    </div>
+                    
+                    <div class="c-listing__info">
+                        <p class="c-listing__name">The Enchanted Plate</p>
+                        <p class="c-listing__location">New York</p>
+                        <i class="c-listing__heart-outline far fa-heart"></i>
+                        <i class="c-listing__heart-solid fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="c-listing">
+                    <div class="c-listing__image"><img src="./public/img/bastille.png" ></div>
+                    <div class="c-listing__info">
+                        <p class="c-listing__name">Bastille</p>
+                        <p class="c-listing__location">New York</p>
+                        <i class="c-listing__heart-outline far fa-heart"></i>
+                        <i class="c-listing__heart-solid fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="c-listing">
+                    <div class="c-listing__image"><img src="./public/img/leGourmand.png" ></div>
+                    <div class="c-listing__info">
+                        <p class="c-listing__name">Le Gourmand</p>
+                        <p class="c-listing__location">New York</p>
+                        <i class="c-listing__heart-outline far fa-heart"></i>
+                        <i class="c-listing__heart-solid fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="c-footer">
+            <h3 class="c-footer__title">ohmyfood</h3>
+            <ul class="l-footer-ul">
+                <li class="c-footer__item"><a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a></li>
+                <li class="c-footer__item"><a href="#"><i class="fas fa-hands-helping"></i> Become a partner</a></li>
+                <li class="c-footer__item"><a href="#">Legal</a></li>
+                <li class="c-footer__item"><a href="#">Contact</a></li>
+            </ul>
+        </footer>
     </div>
-    <section id="intro">
-        <h3>Book the menu you like</h3>
-        <p class="intText">Discover top-of-the-art restaurants we picked for you</p>
-        <a href="#restaurants">Explore our restaurants</a>
-    </section>
-    <section id="instructions">
-        <h3>How it works</h3>
-        <div id="steps">
-            <div class="step">
-                <p class="stNum">1</p>
-                <i class="fas fa-mobile-alt"></i>
-                <p class="stInst">Choose a restaurant</p>
-            </div>
-            <div class="step">
-                <p class="stNum">2</p>
-                <i class="fas fa-list"></i>
-                <p class="stInst">Create your menu</p>
-            </div>
-            <div class="step">
-                <p class="stNum">3</p>
-                <i class="fas fa-store"></i>
-                <p class="stInst">Go enjoy it at the restaurant</p>
-            </div>
-        </div>
-    </section>
-    <section id="restaurants">
-        <h3>Restaurants</h3>
-        <div id="restOut">
-            <div class="restInd">
-                <div class="restPic"></div>
-                <div class="restNew"><p>New</p></div>
-                <div class="restInfo">
-                    <p class="restName">The Full Palette</p>
-                    <p class="restLoc">New York</p>
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                </div>
-            </div>
-            <div class="restInd">
-                <div class="restPic"></div>
-                <div class="restNew"><p>New</p></div>
-                <div class="restInfo">
-                    <p class="restName">The Enchanted Plate</p>
-                    <p class="restLoc">New York</p>
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                </div>
-            </div>
-            <div class="restInd">
-                <div class="restPic"></div>
-                <div class="restInfo">
-                    <p class="restName">Bastille</p>
-                    <p class="restLoc">New York</p>
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                </div>
-            </div>
-            <div class="restInd">
-                <div class="restPic"></div>
-                <div class="restInfo">
-                    <p class="restName">Le Gourmand</p>
-                    <p class="restLoc">New York</p>
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <h3>ohmyfood</h3>
-        <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a></li>
-            <li><a href="#"><i class="fas fa-hands-helping"></i> Become a partner</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </footer>
 </body>
 
 <footer>
