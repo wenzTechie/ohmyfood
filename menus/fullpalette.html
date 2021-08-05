@@ -4,24 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- <link rel="icon" href="./favicon.ico"> -->
     <title>Ohmyfood!</title>
 </head>
 
+
 <body>
-    
-<h1>Oh My Food</h1>
+    <div class="l-page-wrapper">
+        <header class="c-header">
+            <a href="../index.html" class="c-header__back-arrow fas fa-arrow-left"></i></a>
+            <h1>ohmyfood</h1>
+        </header>
+        <div class="c-main-image">
+            <img src="../public/img/fullPallette.png">
+        </div>
+        <div class="l-menu-outer">
+            <div class="c-restaurant-header">
+                <h1 class="c-restaurant-header__name">The Full Palette</h1>
+                <i class="c-restaurant-header__favorite far fa-heart"></i>
+            </div>
+            <div class="l-courses-outer">
+                <div class="l-menu-course-container">
+                    <div class="c-menu-course">
+                        <div class="c-menu-intro">
+                            <h3 class="c-menu-intro__label">Entrees</h3>
+                            <div class="c-menu-intro__underline"></div>
+                        </div>
+                        <div class="c-menu-item">
+                                <p class="c-menu-item__name">Escaragot</p>
+                                <p class="c-menu-item__notes">With southern French spices</p>
+                                <p class="c-menu-item__price">25&euro;</p>
+                                <div class="c-menu-item--order-check-container">
+                                    <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                                </div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Duck Foie Gras</p>
+                            <p class="c-menu-item__notes">With black truffle shavings</p>
+                            <p class="c-menu-item__price">35&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Fried Egg</p>
+                            <p class="c-menu-item__notes">...</p>
+                            <p class="c-menu-item__price">20&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-menu-course">
+                        <div class="c-menu-intro">
+                            <h3 class="c-menu-intro__label">Main Dish</h3>
+                            <div class="c-menu-intro__underline"></div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Herb-Encrusted Steak</p>
+                            <p class="c-menu-item__notes">With delicately sliced and seasended veg...</p>
+                            <p class="c-menu-item__price">40&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Ox Tail Shepard's Pie</p>
+                            <p class="c-menu-item__notes">With black truffle and pureed parsnips</p>
+                            <p class="c-menu-item__price">35&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Filet of Sole</p>
+                            <p class="c-menu-item__notes">With citrus dressing</p>
+                            <p class="c-menu-item__price">44&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-menu-course">
+                        <div class="c-menu-intro">
+                            <h3 class="c-menu-intro__label">Desserts</h3>
+                            <div class="c-menu-intro__underline"></div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Paris-Brest</p>
+                            <p class="c-menu-item__notes">Revisted</p>
+                            <p class="c-menu-item__price">18&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Chocolate Macaroons</p>
+                            <p class="c-menu-item__notes">With vanilla ice cream</p>
+                            <p class="c-menu-item__price">22&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                        <div class="c-menu-item">
+                            <p class="c-menu-item__name">Chocolate Mousse</p>
+                            <p class="c-menu-item__notes">With spices and black truffle</p>
+                            <p class="c-menu-item__price">23&euro;</p>
+                            <div class="c-menu-item--order-check-container">
+                                <i class="fas fa-check-circle c-menu-item--order-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="l-order-button">
+                <a href="../index.html" class="l-order-button__link">Order</a>
+            </div>
+        </div>
 
-
-
-
+        <footer class="c-footer">
+            <h3 class="c-footer__title">ohmyfood</h3>
+            <ul class="l-footer-ul">
+                <li class="c-footer__item"><a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a></li>
+                <li class="c-footer__item"><a href="#"><i class="fas fa-hands-helping"></i> Become a partner</a></li>
+                <li class="c-footer__item"><a href="#">Legal</a></li>
+                <li class="c-footer__item"><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
-
-
 </html>

@@ -49,6 +49,101 @@ section h3 {
   width: 100%;
 }
 
+/* colors */
+/* fonts */
+/* padding */
+/* dropshadows */
+/*
+These are Menu specific page styles
+*/
+.c-header__back-arrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 18px;
+}
+
+.c-main-image {
+  position: relative;
+}
+.c-main-image img {
+  width: 100%;
+  height: auto;
+}
+
+.l-menu-outer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px 20px 40px 20px;
+  border-radius: 40px 40px 0 0;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin-top: -40px;
+  z-index: 200;
+}
+
+.c-restaurant-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.c-restaurant-header__name {
+  margin-top: 0;
+}
+.c-restaurant-header__favorite {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.c-menu-intro__label {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.c-menu-intro__underline {
+  width: 50px;
+  border-bottom: solid 4px #99E2D0;
+}
+
+.c-menu-item {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+.c-menu-item__name {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 35px 5px 0;
+}
+.c-menu-item__notes {
+  margin: 5px 35px 0 0;
+}
+.c-menu-item__price {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+.c-menu-item--order-check-container {
+  display: none;
+}
+
+.l-order-button {
+  margin: 40px auto 30px auto;
+}
+.l-order-button__link {
+  padding: 16px 69px;
+  border-radius: 28px;
+  box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .c-header {
   display: flex;
   flex-direction: row;

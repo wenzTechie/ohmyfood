@@ -1,0 +1,100 @@
+@import "../utils/variables";
+/*
+These are Menu specific page styles
+*/
+.c-header {
+    &__back-arrow {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 18px;
+    }
+}
+
+.c-main-image {
+    position: relative;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.l-menu-outer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px 20px 40px 20px;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+    background-color: $bgMdGray;
+    margin-top: -40px;
+    z-index: 200;
+}
+
+.c-restaurant-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &__name {
+        margin-top: 0;
+    }
+    &__favorite {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+}
+
+.c-menu-course {
+
+}
+
+.c-menu-intro {
+    &__label {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    &__underline{
+        width: 50px;
+        border-bottom: solid 4px $tertiary;
+    }
+}
+
+.c-menu-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: $stOutset;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    &__name {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin: 0 35px 5px 0;
+    }
+    &__notes {
+       margin: 5px 35px 0 0; 
+    }
+    &__price {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        margin: 0 0 10px 0;
+        font-weight: 600;
+    }
+    &--order-check-container {
+        display: none;
+    }
+}
+
+.l-order-button {
+    margin: 40px auto 30px auto;
+    &__link {
+        padding: 16px 69px;
+        border-radius: 28px;
+        box-shadow: $stOutset;
+        background-image: linear-gradient($secondary, $primary);
+        color: rgba(255, 255, 255, .8);
+    }
+}
