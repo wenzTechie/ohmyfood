@@ -13,10 +13,27 @@ These are Menu specific page styles
 
 .c-main-image {
     position: relative;
-    img {
-        width: 100%;
-        height: auto;
-    }
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-image-bastille {
+    background-image: url("../public/img/bastille.png");
+}
+  
+.main-image-enchanted {
+background-image: url("../public/img/enchanted.png");
+}
+
+.main-image-leGourmand {
+background-image: url("../public/img/leGourmand.png");
+}
+
+.main-image-fullPallette {
+background-image: url("../public/img/fullPallette.png");
 }
 
 .l-menu-outer {
@@ -96,5 +113,10 @@ These are Menu specific page styles
         box-shadow: $stOutset;
         background-image: linear-gradient($secondary, $primary);
         color: rgba(255, 255, 255, .8);
+        transition: all 500ms;
+        &:hover {
+            opacity: .7;
+            box-shadow: $strongOutset;
+        }
     }
 }
