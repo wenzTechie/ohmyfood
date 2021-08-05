@@ -90,7 +90,7 @@ These are Menu specific page styles
 
 .l-menu-outer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 30px 20px 40px 20px;
   border-radius: 40px 40px 0 0;
@@ -104,6 +104,7 @@ These are Menu specific page styles
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 .c-restaurant-header__name {
   margin-top: 0;
@@ -113,6 +114,25 @@ These are Menu specific page styles
   margin-top: 10px;
 }
 
+.l-courses-outer {
+  width: 100%;
+}
+
+.l-menu-course-container {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.c-menu-course {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.c-menu-intro {
+  width: 100%;
+}
 .c-menu-intro__label {
   text-transform: uppercase;
   font-weight: 400;
@@ -124,12 +144,14 @@ These are Menu specific page styles
 }
 
 .c-menu-item {
+  width: 90%;
+  max-width: 400px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
   position: relative;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 .c-menu-item__name {
   font-size: 1.2em;
@@ -148,6 +170,11 @@ These are Menu specific page styles
 }
 .c-menu-item--order-check-container {
   display: none;
+}
+@media only screen and (min-width: 900px) {
+  .c-menu-item {
+    margin: 10px 0;
+  }
 }
 
 .l-order-button {
