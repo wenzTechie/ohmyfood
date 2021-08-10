@@ -57,10 +57,36 @@ background-image: url("../public/img/fullPallette.png");
         margin-top: 0;
     }
     &__favorite {
+        position: relative;
         font-size: 26px;
-        margin-top: 10px;
+        right: 20px;
+        cursor: pointer;
+        
+        &:hover > i {
+            transition: all 500ms;
+            ::before {
+                content: "\f004";
+            }
+        }
+       
+        i { 
+            position: absolute;
+            right: 0;
+            
+        }
+        &__heart-outline{
+            opacity: 1;
+        }
+        &__heart-solid {
+            opacity: 0;
+            background: -webkit-linear-gradient(225deg, $primary, $secondary) 0% 0% / 300% 300%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
+
 
 .l-courses-outer {
     width: 100%;
@@ -102,6 +128,8 @@ background-image: url("../public/img/fullPallette.png");
     position: relative;
     padding: 10px;
     margin: 10px auto;
+    transition: all 500ms;
+    opacity: .7;
     &__name {
         font-size: 1.2em;
         font-weight: 600;
@@ -133,8 +161,8 @@ background-image: url("../public/img/fullPallette.png");
         box-shadow: $stOutset;
         background-image: linear-gradient($secondary, $primary);
         color: rgba(255, 255, 255, .8);
-        transition: all 500ms;
         &:hover {
+            transition: all 500ms;
             opacity: .7;
             box-shadow: $strongOutset;
         }
