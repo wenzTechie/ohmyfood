@@ -129,7 +129,7 @@ background-image: url("../public/img/fullPallette.png");
 }
 
 .c-menu-item {
-    width: 90%;
+    width: 95%;
     max-width: 400px;
     background-color: white;
     border-radius: 15px;
@@ -142,12 +142,56 @@ background-image: url("../public/img/fullPallette.png");
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     cursor: pointer;
-    &:hover {
-
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+    &:hover .c-menu-item__info {
+        animation-name: menu-item-favorite-info;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        @keyframes menu-item-favorite-info {
+            0% { width: 85%;}
+            100% {width: 65%;}
+        }
+    }
+
+    &:hover .c-menu-item--order-check-container {
+        animation: menu-item-favorite-container 500ms 1;
+        animation-fill-mode: forwards;
+        @keyframes menu-item-favorite-container {
+            0% { right: -15%; }
+            100% { right: 0; }
+        }
+    }
+
+    &:hover .c-menu-item--order-check-container i {
+        animation: menu-item-favorite-icon 500ms 1;
+        animation-fill-mode: forwards;
+        @keyframes menu-item-favorite-icon {
+            0% { 
+                transform: rotate(0deg);
+            }
+            100% { 
+                transform: rotate(360deg);
+            }
+        }
+    }
+
     @keyframes menu-item-fade-in {
         0% { opacity: 0; margin-top: 40px; }
         100% { opacity: 1; margin-top: 10px; }
+    }
+    &__info {
+        width: 85%;
     }
     &__name {
         font-size: 1.2em;
@@ -158,14 +202,27 @@ background-image: url("../public/img/fullPallette.png");
        margin: 5px 35px 0 0; 
     }
     &__price {
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        margin: 0 0 10px 0;
+        margin: 0 10px;
         font-weight: 600;
+        width: 15%;
+        text-align: right;
     }
     &--order-check-container {
-        display: none;
+        background-color: $tertiary;
+        height: 100%;
+        overflow: hidden;
+        position:absolute;
+        top:0;
+        right: -15%;
+        width: 15%;
+        i {
+            color: white;
+            font-size: 26px;
+            margin-top: calc(50% - 13px);
+            text-align: center;
+            width: 100%;
+        }
+        
     }
     @media only screen and (min-width: 900px) {
         margin: 10px 0;
