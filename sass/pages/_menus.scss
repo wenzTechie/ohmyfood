@@ -38,7 +38,7 @@ background-image: url("../public/img/fullPallette.png");
 
 .l-menu-outer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     padding: 30px 20px 40px 20px;
     border-radius: 40px 40px 0 0;
@@ -52,21 +52,71 @@ background-image: url("../public/img/fullPallette.png");
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    width: 100%;
+    i {
+        top: 0;
+        right:0;
+        margin: 10px;
+        font-size: 25px;
+        position: absolute;
+        cursor: pointer;
+    }
     &__name {
         margin-top: 0;
     }
     &__favorite {
-        font-size: 26px;
-        margin-top: 10px;
+        position: relative;
+        font-size: 30px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        
+        &-outline{
+            margin-top: -10px;
+            position: absolute;
+            opacity: 1;
+        }
+        &-solid {
+            margin-top: -10px;
+            opacity: 0;
+            background: -webkit-linear-gradient(225deg, $primary, $secondary) 0% 0% / 300% 300%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:hover {
+                transition: all 500ms;
+                background: -webkit-linear-gradient(225deg, $primary, $secondary) 0% 0% / 100% 100%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 1;
+                
+            }
+        }
     }
 }
 
-.c-menu-course {
+
+.l-courses-outer {
+    width: 100%;
+}
+
+.l-menu-course-container {
+    
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
+.c-menu-course {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .c-menu-intro {
+    width: 100%;
     &__label {
         text-transform: uppercase;
         font-weight: 400;
@@ -79,12 +129,26 @@ background-image: url("../public/img/fullPallette.png");
 }
 
 .c-menu-item {
+    width: 90%;
+    max-width: 400px;
     background-color: white;
     border-radius: 15px;
     box-shadow: $stOutset;
     position: relative;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto;
+    animation-name: menu-item-fade-in;
+    animation-duration: 750ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    &:hover {
+
+    }
+    @keyframes menu-item-fade-in {
+        0% { opacity: 0; margin-top: 40px; }
+        100% { opacity: 1; margin-top: 10px; }
+    }
     &__name {
         font-size: 1.2em;
         font-weight: 600;
@@ -103,6 +167,9 @@ background-image: url("../public/img/fullPallette.png");
     &--order-check-container {
         display: none;
     }
+    @media only screen and (min-width: 900px) {
+        margin: 10px 0;
+    }
 }
 
 .l-order-button {
@@ -113,8 +180,8 @@ background-image: url("../public/img/fullPallette.png");
         box-shadow: $stOutset;
         background-image: linear-gradient($secondary, $primary);
         color: rgba(255, 255, 255, .8);
-        transition: all 500ms;
         &:hover {
+            transition: all 500ms;
             opacity: .7;
             box-shadow: $strongOutset;
         }
