@@ -53,36 +53,45 @@ background-image: url("../public/img/fullPallette.png");
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    i {
+        top: 0;
+        right:0;
+        margin: 10px;
+        font-size: 25px;
+        position: absolute;
+        cursor: pointer;
+    }
     &__name {
         margin-top: 0;
     }
     &__favorite {
         position: relative;
-        font-size: 26px;
-        right: 20px;
+        font-size: 30px;
+        right: 0;
+        top: 0;
         cursor: pointer;
         
-        &:hover > i {
-            transition: all 500ms;
-            ::before {
-                content: "\f004";
-            }
-        }
-       
-        i { 
+        &-outline{
+            margin-top: -10px;
             position: absolute;
-            right: 0;
-            
-        }
-        &__heart-outline{
             opacity: 1;
         }
-        &__heart-solid {
+        &-solid {
+            margin-top: -10px;
             opacity: 0;
             background: -webkit-linear-gradient(225deg, $primary, $secondary) 0% 0% / 300% 300%;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            &:hover {
+                transition: all 500ms;
+                background: -webkit-linear-gradient(225deg, $primary, $secondary) 0% 0% / 100% 100%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 1;
+                
+            }
         }
     }
 }
@@ -128,8 +137,18 @@ background-image: url("../public/img/fullPallette.png");
     position: relative;
     padding: 10px;
     margin: 10px auto;
-    transition: all 500ms;
-    opacity: .7;
+    animation-name: menu-item-fade-in;
+    animation-duration: 750ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    &:hover {
+
+    }
+    @keyframes menu-item-fade-in {
+        0% { opacity: 0; margin-top: 40px; }
+        100% { opacity: 1; margin-top: 10px; }
+    }
     &__name {
         font-size: 1.2em;
         font-weight: 600;
